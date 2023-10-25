@@ -13,11 +13,16 @@ function FormFn() {
         console.log(event.target.name, event.target.value);
 
         setValues({ ...values, [event.target.name]: event.target.value});
-    };
+    }; 
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log(values);
+    }
 
     return (
         <>
-            <form>
+            <form onSubmit={handleSubmit}>
 
                 <div>
                     <label htmlFor="nombre">Nombre</label>
