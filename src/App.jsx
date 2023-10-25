@@ -9,6 +9,10 @@ function App() {
   const handleClick = () => console.log("click");
 
   const handleLink = (event) => {
+
+    console.log(event.type); 
+    console.log(event.target);
+
     event.preventDefault();
     console.log("Click en Link");
   };
