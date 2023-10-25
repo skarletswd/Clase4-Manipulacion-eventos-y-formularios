@@ -5,12 +5,14 @@
 
 function App() {
   // const [count, setCount] = useState(0)
+  
+  const handleClick = () => console.log("click");
 
   return (
     <>
-      <button onClick={() => console.log("click")}>Click me</button>;
+      <button onClick={handleClick}>Click me</button>
     </>
   )
 }
 
-export default App
+export default App;
