@@ -8,9 +8,15 @@ function App() {
   
   const handleClick = () => console.log("click");
 
+  const handleLink = (event) => {
+    event.preventDefault();
+    console.log("Click en Link");
+  };
+
   return (
     <>
       <button onClick={handleClick}>Click me</button>
+      <a onClick={handleLink} href="https://google.com">Google</a>
     </>
   )
 }
